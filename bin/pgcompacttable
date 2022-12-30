@@ -250,7 +250,7 @@ sub db_connect {
   my $db_port = shift;
   my $db_user = shift;
   my $db_password = shift;
-  my $connstr = "DBI:Pg:";
+  my $connstr = "DBI:Pg:sslmode=require;";
 
   unset_after_round_statement;
 
